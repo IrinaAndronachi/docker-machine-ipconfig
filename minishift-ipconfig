@@ -75,7 +75,7 @@ EOF
         # TODO Add something if needed minishift regenerate-certs
 
         # Status report
-        minishift ssh "ip addr show eth1 | grep "inet.*eth1""
+        minishift ssh "ip addr show eth1 | grep 'inet.*eth1'"
         printf "minishift now has a static ip address\n" 
         ;;
 
