@@ -7,7 +7,7 @@ Works for Mac OS x and Cygwin docker clients. Probably works on Linux, but hasn'
 
 # minishift-ipconfig
 A simple adaption of docker-maching-ipconfig in order to work with minishift instead of docker-machine.
-Can be used to solve issue https://github.com/minishift/minishift/issues/343
+Can be used to solve issue https://github.com/minishift/minishift/issues/343 - it's a workaround because the solution for assigning a static IP is not finally fixed in docker-machine - just install the script and call 'minishift-ipconfig static' after starting the minishift cluster first time (while it's running). Next time it's started again it will have the originally assigned IP statically assigned.
 
 Tested with Cygwin.
 
@@ -106,4 +106,4 @@ $ minishift-ipconfig hosts
 
 ## Thanks
 
-Thanks to [@micheletedeschi](https://github.com/micheletedeschi) and all the other helpful participants in the docker/machine [issue thread 1709](https://github.com/docker/machine/issues/1709)
+Thanks to Josh Wilson [@jswilson](https://github.com/jcwilson), [@micheletedeschi](https://github.com/micheletedeschi) and all the other helpful participants in the docker/machine [issue thread 1709](https://github.com/docker/machine/issues/1709)
